@@ -1,0 +1,555 @@
+ *{ 
+   font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
+}
+  
+P{
+    font-size: 2rem;
+}
+[class^="container-fluid"]{
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    z-index: 6;
+    
+}
+.link{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap:wrap;
+    cursor: pointer;
+   
+
+}
+h3{
+    font-size: 1rem;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    text-align: center;
+    padding-right: 1rem;
+    color: white;
+
+    
+}
+.profile{
+    color: white;
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+    padding-left: 2%;
+    padding-top: 5%;
+    justify-content: space-between;
+    position: absolute;
+    left: 0;
+    display: none;
+    
+ 
+}
+#abi{
+    width: 300px;
+    height: 300px;
+    border: 2px solid white;
+    position: relative;
+    border-radius: 50%;
+    padding-top: 10px;
+}
+a{
+    font-size: 3rem;
+    margin-left: 1rem;
+    text-decoration: none;
+}
+.jo{
+    
+    width: 1280px;
+}
+
+body{
+    overflow: scroll;
+    background-color: black;
+
+}
+#intro{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    z-index: 3;
+   
+}
+#abimain{
+    animation: abi 3s infinite ;
+}
+@keyframes abi {
+    from{
+        transform: rotate(0deg);
+      }
+    to{
+        transform: rotatey(360deg);
+    }
+    
+}
+
+ /* toggle  */
+
+#toggle{
+    display: none;
+}
+#tog{
+    display: none;
+}
+
+
+
+
+
+ /* about */
+#ab{
+    background-color:black;
+    color: white;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    font-size: 2rem;
+    padding-top: 6%;
+    text-align: center;
+  
+}
+marquee{
+    height: 500px;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+      
+    
+}
+marquee:hover{
+    color: green;
+    transition: 4s;
+}
+    /* skills   */
+#ski{
+position: absolute;
+left: 0;
+width: 100%;
+height: 100%;
+overflow: hidden;
+display: none;
+
+
+}
+.rotater{
+animation-name: gri;
+animation-duration: 7s;
+animation-iteration-count: infinite;
+
+
+
+}
+.j1{
+    width: 200px;
+    height: 200px;
+}
+@keyframes gri {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotateY(360deg);
+    }
+    
+}
+.i1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    margin-top: 5rem;
+    row-gap: 10%;
+
+}
+ /* educations   */
+
+
+ 
+#edu{
+    display: none;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 20px;
+    column-gap: 20px;
+    width: 50%;
+    margin-left: 10%;
+}
+.school1 ,.school2,.college2 ,.sdlc1{
+    border: 2px solid black;
+    height: 300px;
+    background-color:wheat;
+    margin-top: 2%;
+    width: 100%;
+    text-align: center;
+}
+.sch1{
+    width: 500px;
+    height: 100px;
+}
+.sch2{
+    width: 500px;
+    height: 100px;
+}
+.ms{
+    margin-left: 20px;
+    font-family: "Bebas Neue", sans-serif;
+    color: black;
+    font-size: 1rem;
+
+}
+ /* certificate  */
+
+.deg{
+    border: 3px solid black;
+    width: 500px;
+    margin-top: 2%;
+    margin-left: 6%;
+    padding-left: 1%;
+    transition: 4s;
+    background-color: red;
+}
+.deg1{
+    width: 480px;
+    height: 480px;
+}
+.pro1{
+    width: 480px;
+    height: 480px;
+}
+.pro{
+    border: 3px solid black;
+    width: 500px;
+    margin-top: 2%;
+    margin-left: 15%;
+    padding-left: 1%;
+    transition: 4s;
+    background-color: red;
+}
+#cer{
+    display: none;
+}
+.deg:hover{
+    transform: rotatey(360deg);
+
+}
+.pro:hover{
+    transform: rotatey(360deg);
+
+
+ }   
+/*  */
+
+
+
+
+
+
+
+
+
+/* dont touch it  */
+
+
+
+
+
+
+
+ 
+/* media screen mobile */
+@media (min-width:320px)and (max-width:767px) {
+    P{
+        font-size: 25px;
+    }
+    [class^="container-fluid"]{
+        position: sticky;
+        z-index: 6;
+        width: 130%;
+        height: 100px;
+        overflow: scroll;
+        display: none;
+        
+    }
+    .link{
+        display: none;
+        justify-content: space-between;
+        cursor: pointer;
+        color: white;
+        font-size: 1px;
+        width: 120%;
+
+       
+    
+    }
+    h3{
+       font-size:18px;
+       width: 1%;
+       margin-top: 50px;
+       margin-left: 10%;
+      
+    }
+
+.profile{
+    color: white;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    padding-top: 20%;
+    justify-content: space-between;
+    position: absolute;
+    left: 0;
+    display: none;
+    
+ 
+}
+/* profile text */
+#he1{
+    font-size: 20px;
+
+}
+#se{
+    font-size: 25px;
+}
+#full{
+    font-size: 30px;
+    width: 120%;
+}
+#tri{
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 20px;
+    width: 100%;
+    margin-top: 10%;
+    margin-left: 1%;
+}
+#jp{
+    text-align: center;
+    margin-top: 20%;
+}
+#abi{
+    width: 120px;
+    height: 120px;
+    border: 2px solid white;
+    position: relative;
+    border-radius: 50%;
+    padding-top: 10px;
+}
+a{
+    font-size: 4rem;
+    margin-left: 1rem;
+    text-decoration: none;
+}
+.jo{
+    
+    width: 1280px;
+}
+
+body{
+    overflow: scroll;
+
+}
+#intro{
+    position: absolute;
+    left: 0;
+    top: 3rem;
+    width: 100%;
+    height: 100%;
+   
+}
+.int{
+    width: 100%;
+    height: 100%;
+}
+#abimain{
+    animation: abi 3s infinite ;
+}
+@keyframes abi {
+    from{
+        transform: rotate(0deg);
+      }
+    to{
+        transform: rotatey(360deg);
+    }
+    
+}
+
+/* toggle */
+
+#toggle{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: green;
+    border: 3px solid gray;
+    position: fixed;
+    top: 0;
+    z-index: 8;
+
+}
+.text-inf{
+    color: red;
+}
+#tog{
+    color:white;
+    background-color:black;
+    width: 40%;
+    position: absolute;
+    top: 6%;
+    left: -200px;
+    height: 100%;
+    transition: 1s;
+    display: block;
+}
+
+
+
+
+
+ /* about  */
+#ab{
+    background-color:black;
+    color: white;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    font-size: 2rem;
+    padding-top: 10%;
+    text-align:start;
+    display: none;
+  
+}
+marquee{
+    height: 600px;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+      
+    
+}
+/* /* skills  */
+#ski{
+position: absolute;
+left: 0;
+width: 100%;
+height: 100%;
+overflow: hidden;
+display: none;
+
+
+}
+.rotater{
+animation-name: gri;
+animation-duration: 7s;
+animation-iteration-count: infinite;
+
+
+
+}
+.j1{
+    width: 120px;
+    height: 120px;
+}
+@keyframes gri {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotateY(360deg);
+    }
+    
+}
+.i1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr  1fr ;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    row-gap: 9%;
+    column-gap: 4%;
+
+}
+/* /* educations  */
+#edu{
+    display: none;
+    grid-template-columns: 1fr ;
+    row-gap: 40px;
+    width: 10%;
+    margin-left: 25%;
+    margin-top: 13%;
+}
+.sch1{
+    height: 50px;
+    width: 197px;
+}
+.school1 ,.school2,.college2 ,.sdlc1{
+    border: 2px solid black;
+    height: 200px;
+    background-color:wheat;
+    margin-top: 8%;
+    width: 200px;
+    text-align: center;
+}
+.sch2{
+    width: 100%;
+}.ms{
+    margin-left: 20px;
+    font-family: "Bebas Neue", sans-serif;
+    color: black;
+    font-size: 10px;
+
+}
+/* certificate */
+
+.deg{
+    border: 3px solid black;
+    width: 320px;
+    height: 320px;
+    margin-top: 18%;
+    margin-left: 10%;
+    transition: 4s;
+    background-color: red;
+}
+.deg1{
+    width: 300px;
+    height: 300px;
+}
+.pro1{
+    width: 300px;
+    height: 300px;
+}
+.pro{
+    border: 3px solid black;
+    width: 320px;
+    height: 320px;
+    margin-top: 2%;
+    margin-left: 10%;
+    padding-left: 1%;
+    transition: 4s;
+    background-color: red;
+}
+#cer{
+    display: none;
+    
+}
+.deg:hover{
+    transform: rotatey(360deg);
+
+}
+.pro:hover{
+    transform: rotatey(360deg);
+
+
+ }   
+
+  
+    
+}
+
+ 
+
+
+
